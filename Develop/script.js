@@ -1,6 +1,9 @@
 console.log('hello world')
 
-document.getElementById("gettingDataFromJavascript").innerHTML = 5 + 6;
-var usernameInput = document.getElementById("inlineFormInputGroupUsername");
 
-console.log(usernameInput)
+const comments_section = document.getElementById("inlineFormInputGroupUsername");
+console.log(comments_section);
+
+// document.getElementById("inlineFormInputGroupUsername").innerHTML = 5 + 6;
+// var usernameInput = document.getElementById("inlineFormInputGroupUsername");
+
