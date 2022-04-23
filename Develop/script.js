@@ -4,9 +4,15 @@ myForm.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("Form has been submitted!")
   console.log(myForm.Username.value)
+  localStorage.setItem('8am', myForm.Username.value)
 });
 
 
+
+// Working with local storages:
+localStorage.setItem('name', 'BOB')
+console.log('We are printing the value of name')
+console.log(localStorage.getItem('name'))
 
 
 
