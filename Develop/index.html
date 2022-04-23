@@ -34,11 +34,17 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- Adding the code for the time -->
+      <div>
+        <script>
+        date = new Date().toLocaleDateString();
+        document.write(date);
+        </script>
+      </div>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-
-
+      
 <!-- Testing the functionality for saving the local storage -->
       <div class="container">
         <input class="storage" type="text">
@@ -61,7 +67,7 @@
             </form>
 
             <form id="myForm2" class="col-12 mb-4">
-              <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+              <!-- <label class="visually-hidden" for="inlineFormInputGroupUsername">Mario</label> -->
               <div class="input-group">
                 <div class="input-group-text">09am</div>
                 <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="09:00am">

@@ -33,9 +33,15 @@ storageInput.addEventListener('input', letter => {
     text.textContent = letter.target.value
 })
 
+// Testing codes
 myForm.addEventListener('input', letter => {
     text.textContent = letter.target.value
 })
+// myForm2.addEventListener('input', letter => {
+//     myForm2.textContent = letter.target.value
+// })
+
+
 
 const saveToLocalStorage = () => {
     localStorage.setItem('textinput', text.textContent)
@@ -43,6 +49,7 @@ const saveToLocalStorage = () => {
 button.addEventListener('click', saveToLocalStorage)
 
 // REFERENCE VIDEOS
+
 // LocalStorage for beginners (HTML and Javascript)
 // https://www.youtube.com/watch?v=rVyTjFofok0
 
@@ -51,3 +58,6 @@ button.addEventListener('click', saveToLocalStorage)
 
 // Sending the value 
 // https://www.youtube.com/watch?v=TUnfb944HFI
+
+// For getting today's date 
+// https://www.delftstack.com/howto/html/html-todays-date/
