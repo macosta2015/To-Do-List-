@@ -1,6 +1,14 @@
 const myForm = document.getElementById("myForm");
-// const myForm2 = document.getElementById("myForm2");
-const myForm2 = document.getElementById("myForm2").innerHTML = text;
+const myForm2 = document.getElementById("myForm2");
+
+
+// testing the code
+let text2 = "We are passing the javascript value to HTML";
+document.getElementById("myP").innerHTML = text2;
+let text3 = "We are using getElementById";
+document.getElementById("myDIV").innerHTML = text3;
+document.getElementById("myDIV4").innerHTML = text3;
+
 
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -25,6 +33,12 @@ if(localStorage.getItem('8am')){
     console.log('IT DOES EXISTS AND THE VALUE OF 8am IS: ')
     console.log(localStorage.getItem('8am'))
 }
+
+//Testing reading the text from the box
+function myFunction() {
+    document.getElementById("myText").value = localStorage.getItem('8am');
+}
+
 
 //Code for editing the test that is already saved
 const storageInput = document.querySelector('.storage');
@@ -67,6 +81,9 @@ const saveToLocalStorage = () => {
 button.addEventListener('click', saveToLocalStorage)
 
 // REFERENCE VIDEOS
+
+// Display the input value into html 
+// https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_text_value2
 
 // Local storage
 // https://www.w3schools.com/jsref/prop_win_localstorage.asp
