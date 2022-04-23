@@ -37,6 +37,7 @@ if(localStorage.getItem('8am')){
 //Testing reading the text from the box
 function myFunction() {
     document.getElementById("myText").value = localStorage.getItem('8am');
+    document.getElementById("myDIV4").value = localStorage.getItem('8am');
 }
 
 
