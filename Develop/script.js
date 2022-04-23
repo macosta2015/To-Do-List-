@@ -1,4 +1,5 @@
 const myForm = document.getElementById("myForm");
+const myForm2 = document.getElementById("myForm2");
 
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -25,6 +26,7 @@ const storedInput = localStorage.getItem('textinput');
 //This code is for savind the data 
 if(storageInput){
     text.textContent = storedInput
+    // text.textContent = myForm2
 }
 
 storageInput.addEventListener('input', letter => {
@@ -34,7 +36,6 @@ storageInput.addEventListener('input', letter => {
 myForm.addEventListener('input', letter => {
     text.textContent = letter.target.value
 })
-
 
 const saveToLocalStorage = () => {
     localStorage.setItem('textinput', text.textContent)
