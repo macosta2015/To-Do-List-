@@ -1,26 +1,13 @@
 const myForm = document.getElementById("myForm");
 const myForm2 = document.getElementById("myForm2");
 
-
-// testing the code
-let text2 = "We are passing the javascript value to HTML";
-document.getElementById("myP").innerHTML = text2;
-let text3 = "We are using getElementById";
-document.getElementById("myDIV").innerHTML = text3;
-document.getElementById("myDIV4").innerHTML = text3;
-
 //This is the important code that we need to use in order to setItem to our variable
 //It works when you click enter 
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("Form has been submitted!")
-    // console.log(myForm.Username.value)
-    // localStorage.setItem('8am', myForm.Username.value)
     console.log(myForm.Username.value)
     localStorage.setItem('8am', myForm.Username.value)
-    //Tetsing the other value 
-    console.log(myForm2.9am.value)
-    localStorage.setItem('9am', myForm.9am.value)
 });
 
 console.log("WE ARE OUTSIDE THE LOOPS TESTING: " + myForm.Username.value);
