@@ -1,48 +1,61 @@
-const myForm = document.getElementById("myForm");
-const myForm2 = document.getElementById("myForm2");
+//Testing reading the text from the box
+    document.getElementById("07am").value = localStorage.getItem('7am');
+    document.getElementById("08am").value = localStorage.getItem('8am');
+    document.getElementById("09am").value = localStorage.getItem('9am');
+    document.getElementById("10am").value = localStorage.getItem('10am');
+    document.getElementById("11am").value = localStorage.getItem('11am');
+    document.getElementById("12am").value = localStorage.getItem('12am');
+    document.getElementById("1pm").value = localStorage.getItem('1pm');
+    document.getElementById("2pm").value = localStorage.getItem('2pm');
+    document.getElementById("3pm").value = localStorage.getItem('3pm');
+    document.getElementById("4pm").value = localStorage.getItem('4pm');
+    document.getElementById("5pm").value = localStorage.getItem('5pm');
+    document.getElementById("6pm").value = localStorage.getItem('6pm');
+    document.getElementById("7pm").value = localStorage.getItem('7pm');
+    document.getElementById("8pm").value = localStorage.getItem('8pm');
+    document.getElementById("9pm").value = localStorage.getItem('9pm');
+    
 
+//This is the important code that we need to use in order to setItem to our variable
+// eightAM.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     console.log("Form has been submitted!: ")
+//     localStorage.setItem('8am', eightAM.Username.value)
+// });
 
-// testing the code
-let text2 = "We are passing the javascript value to HTML";
-document.getElementById("myP").innerHTML = text2;
-let text3 = "We are using getElementById";
-document.getElementById("myDIV").innerHTML = text3;
-document.getElementById("myDIV4").innerHTML = text3;
-
-
-myForm.addEventListener("submit", (e) => {
+addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("Form has been submitted!")
-    // console.log(myForm.Username.value)
-    // localStorage.setItem('8am', myForm.Username.value)
-    console.log(myForm.Username.value)
-    localStorage.setItem('8am', myForm.Username.value)
+    localStorage.setItem('7am', sevenAM.Username.value)
+    localStorage.setItem('8am', eightAM.Username.value)
+    localStorage.setItem('9am', nineAM.Username.value)
+    localStorage.setItem('10am', tenAM.Username.value)
+    localStorage.setItem('11am', elevenAM.Username.value)
+    localStorage.setItem('12am', twelveAM.Username.value)
+    localStorage.setItem('1pm', onePM.Username.value)
+    localStorage.setItem('2pm', twoPM.Username.value)
+    localStorage.setItem('3pm', threePM.Username.value)
+    localStorage.setItem('4pm', fourPM.Username.value)
+    localStorage.setItem('5pm', fivePM.Username.value)
+    localStorage.setItem('6pm', sixPM.Username.value)
+    localStorage.setItem('7pm', sevenPM.Username.value)
+    localStorage.setItem('8pm', eightPM.Username.value)
+    localStorage.setItem('9pm', ninePM.Username.value)
 });
-
-console.log("WE ARE OUTSIDE THE LOOPS TESTING: " + myForm.Username.value);
-console.log(myForm.Username.value)
 
 
 // Working with local storages:
 localStorage.setItem('name', 'BOB')
-console.log('We are printing the value of 8am: ')
-console.log(localStorage.getItem('8am'))
+console.log('We are printing the value of 7am: ')
+console.log(localStorage.getItem('7am'))
 
 //Testing saving the local storage into the Form
-if(localStorage.getItem('8am')){
-    console.log('IT DOES EXISTS AND THE VALUE OF 8am IS: ')
-    console.log(localStorage.getItem('8am'))
+if(localStorage.getItem('7am')){
+    console.log('IT DOES EXISTS AND THE VALUE OF 7am IS: ')
+    console.log(localStorage.getItem('7am'))
 }
-
-//Testing reading the text from the box
-function myFunction() {
-    document.getElementById("myText").value = localStorage.getItem('8am');
-    document.getElementById("myDIV4").value = localStorage.getItem('8am');
-}
-
 
 //Code for editing the test that is already saved
-const storageInput = document.querySelector('.storage');
+const storageInput = document.querySelector('.username');
 const text = document.querySelector('.text');
 const button = document.querySelector('.button');
 const storedInput = localStorage.getItem('textinput');
@@ -53,28 +66,16 @@ const storedInput = localStorage.getItem('textinput');
 //This code is for savind the data 
 if(storageInput){
     text.textContent = storedInput
-    // text.textContent = myForm2
 }
-
-
-// //Testing saving the local storage into the Form
-// if(myForm){
-//     text.textContent = myForm
-// }
 
 storageInput.addEventListener('input', letter => {
     text.textContent = letter.target.value
 })
 
 // Testing codes
-myForm.addEventListener('input', letter => {
+sevenAM.addEventListener('input', letter => {
     text.textContent = letter.target.value
 })
-// myForm2.addEventListener('input', letter => {
-//     myForm2.textContent = letter.target.value
-// })
-
-
 
 const saveToLocalStorage = () => {
     localStorage.setItem('textinput', text.textContent)
