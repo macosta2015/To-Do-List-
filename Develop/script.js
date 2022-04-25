@@ -1,17 +1,15 @@
-const myForm = document.getElementById("myForm");
-const myForm2 = document.getElementById("myForm2");
 
 //This is the important code that we need to use in order to setItem to our variable
 //It works when you click enter 
-myForm.addEventListener("submit", (e) => {
+eightAM.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("Form has been submitted!")
-    console.log(myForm.Username.value)
-    localStorage.setItem('8am', myForm.Username.value)
+    console.log("Form has been submitted!: ")
+    console.log(eightAM.Username.value)
+    localStorage.setItem('8am', eightAM.Username.value)
 });
 
-console.log("WE ARE OUTSIDE THE LOOPS TESTING: " + myForm.Username.value);
-console.log(myForm.Username.value)
+console.log("WE ARE OUTSIDE THE LOOPS TESTING: " + eightAM.Username.value);
+console.log(eightAM.Username.value)
 
 
 // Working with local storages:
@@ -28,7 +26,7 @@ if(localStorage.getItem('8am')){
 //Testing reading the text from the box
 function myFunction() {
     document.getElementById("myText").value = localStorage.getItem('8am');
-    document.getElementById("myDIV4").value = localStorage.getItem('8am');
+    document.getElementById("08am").value = localStorage.getItem('8am');
 }
 
 
@@ -44,28 +42,16 @@ const storedInput = localStorage.getItem('textinput');
 //This code is for savind the data 
 if(storageInput){
     text.textContent = storedInput
-    // text.textContent = myForm2
 }
-
-
-// //Testing saving the local storage into the Form
-// if(myForm){
-//     text.textContent = myForm
-// }
 
 storageInput.addEventListener('input', letter => {
     text.textContent = letter.target.value
 })
 
 // Testing codes
-myForm.addEventListener('input', letter => {
+eightAM.addEventListener('input', letter => {
     text.textContent = letter.target.value
 })
-// myForm2.addEventListener('input', letter => {
-//     myForm2.textContent = letter.target.value
-// })
-
-
 
 const saveToLocalStorage = () => {
     localStorage.setItem('textinput', text.textContent)

@@ -45,14 +45,37 @@
     </header>
     <div class="container">
       
+<!-- Testing the functionality for saving the local storage -->
 
+<!-- Doing the 10 -->
+<input type="text" id="myText">
 
-            <form id="myForm" class="col-12 mb-4">
-              <!-- <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label> -->
+<button onclick="myFunction()">Laod Data</button>
+
+      <div class="container">
+        <p class="text">Text</p>
+      </div>
+
+            <form id="eightAM" class="col-12 mb-4">
+              <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-text">07am</div>
+                <!-- This is the most important line, it is reading the information  -->
+                <input  type="text" class="form-control" name="Username">
+                <!-- <input type="text" class="storage" name="Username"> -->
+                <button class="btn btn-default">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+                  </svg> 
+                </button>
+              </div>
+            </form>
+
+            <form class="col-12 mb-4">
+              <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
               <div class="input-group">
                 <div class="input-group-text">08am</div>
-                <!-- This is the most important line, it is reading the information  -->
-                <input type="text" class="storage" name="Username">
+                <input  id="08am" type="text" class="form-control" placeholder="Username">
                 <button class="btn btn-default">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
                     <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
@@ -74,17 +97,11 @@
               </div>
             </form>
 
-
-<!-- Doing the 10 -->
-Name: <input type="text" id="myText">
-<p>Click the button to change the value of the text field.</p>
-<button onclick="myFunction()">Try it</button>
-
           <form class="col-12 mb-4">
             <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
             <div class="input-group">
               <div class="input-group-text">10am</div>
-              <input  id="myDIV4" type="text" class="form-control" placeholder="Username">
+              <input  id="10am" type="text" class="form-control" placeholder="Username">
               <button class="btn btn-default">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
                   <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
@@ -93,18 +110,18 @@ Name: <input type="text" id="myText">
             </div>
           </form>
 
-          <div class="col-12 mb-4">
+          <form class="col-12 mb-4">
             <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
             <div class="input-group">
               <div class="input-group-text">11am</div>
-              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+              <input  id="myDIV4" type="text" class="form-control" placeholder="Username">
               <button class="btn btn-default">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
                   <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
                 </svg> 
               </button>
             </div>
-          </div>
+          </form>
 
           <div class="col-12 mb-4">
             <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
@@ -172,15 +189,6 @@ Name: <input type="text" id="myText">
           </div>
     </div>
 
-
-    <!-- <script>
-      const myForm = document.getElementById("myForm");
-
-      myForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        console.log("Form has been submitted!")
-      });
-    </script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
