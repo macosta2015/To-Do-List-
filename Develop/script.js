@@ -1,69 +1,47 @@
 //Testing reading the text from the box
-
-    document.getElementById("myText").value = localStorage.getItem('7am');
     document.getElementById("07am").value = localStorage.getItem('7am');
     document.getElementById("08am").value = localStorage.getItem('8am');
     document.getElementById("09am").value = localStorage.getItem('9am');
     document.getElementById("10am").value = localStorage.getItem('10am');
     document.getElementById("11am").value = localStorage.getItem('11am');
     document.getElementById("12am").value = localStorage.getItem('12am');
-    document.getElementById("1am").value = localStorage.getItem('1am');
-
-
+    document.getElementById("1pm").value = localStorage.getItem('1pm');
+    document.getElementById("2pm").value = localStorage.getItem('2pm');
+    document.getElementById("3pm").value = localStorage.getItem('3pm');
+    document.getElementById("4pm").value = localStorage.getItem('4pm');
+    document.getElementById("5pm").value = localStorage.getItem('5pm');
+    document.getElementById("6pm").value = localStorage.getItem('6pm');
+    document.getElementById("7pm").value = localStorage.getItem('7pm');
+    document.getElementById("8pm").value = localStorage.getItem('8pm');
+    document.getElementById("9pm").value = localStorage.getItem('9pm');
+    
 
 //This is the important code that we need to use in order to setItem to our variable
-//It works when you click enter 
-sevenAM.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Form has been submitted!: ")
-    localStorage.setItem('7am', sevenAM.Username.value)
-});
-
-
-eightAM.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Form has been submitted!: ")
-    localStorage.setItem('8am', eightAM.Username.value)
-});
-
-
-nineAM.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Form has been submitted!: ")
-    localStorage.setItem('9am', nineAM.Username.value)
-});
-
-
-tenAM.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Form has been submitted!: ")
-    localStorage.setItem('10am', tenAM.Username.value)
-});
-
-elevenAM.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Form has been submitted!: ")
-    localStorage.setItem('11am', elevenAM.Username.value)
-});
-
-twelveAM.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Form has been submitted!: ")
-    localStorage.setItem('12am', twelveAM.Username.value)
-});
+// eightAM.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     console.log("Form has been submitted!: ")
+//     localStorage.setItem('8am', eightAM.Username.value)
+// });
 
 addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("Form has been submitted!: ")
-    localStorage.setItem('1am', oneAM.Username.value)
+    localStorage.setItem('7am', sevenAM.Username.value)
+    localStorage.setItem('8am', eightAM.Username.value)
+    localStorage.setItem('9am', nineAM.Username.value)
+    localStorage.setItem('10am', tenAM.Username.value)
+    localStorage.setItem('11am', elevenAM.Username.value)
+    localStorage.setItem('12am', twelveAM.Username.value)
+    localStorage.setItem('1pm', onePM.Username.value)
+    localStorage.setItem('2pm', twoPM.Username.value)
+    localStorage.setItem('3pm', threePM.Username.value)
+    localStorage.setItem('4pm', fourPM.Username.value)
+    localStorage.setItem('5pm', fivePM.Username.value)
+    localStorage.setItem('6pm', sixPM.Username.value)
+    localStorage.setItem('7pm', sevenPM.Username.value)
+    localStorage.setItem('8pm', eightPM.Username.value)
+    localStorage.setItem('9pm', ninePM.Username.value)
 });
 
-
-
-
-console.log("WE ARE OUTSIDE THE LOOPS TESTING: " + sevenAM.Username.value);
-console.log(sevenAM.Username.value)
-console.log(eightAM.Username.value)
 
 // Working with local storages:
 localStorage.setItem('name', 'BOB')
